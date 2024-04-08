@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Cadastro de Usuário</title>
+ 
+<style>
+	/*aplicar uma cor de fundo a página*/
+	body{
+		background-color: #2E190B;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#divimagem{
+		background-image: url("img.png");
+		background-size: 100%;
+		width: 30%;
+		height: 750px;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		box-shadow: 0px 5px 10px #301804;
+	}
+	#divform{
+		background-color: #eae7d6;
+		width: 30%;
+		height: 750px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		box-shadow: 0px 5px 20px #301804;
+		
+	}
+	
+	h2{
+		color: #593f27;
+		font-family: calibri;
+		text-align: center;
+		font-style: italic;
+		margin-top: 18%;
+	}
+	h4{
+		font-family: "calibri light";
+		text-align: center;
+		margin-top: 20px;
+	}
+	
+	label{
+		display: block;
+		margin-bottom: 10px;
+		text-align: right;
+		font-family: 'Lucida Sans';
+		font-size: 11pt;
+		font-weight: bold;
+		margin-top: 4%;
+	}
+	input{
+		padding: 8px;
+		font-size: 10pt;
+		font-family: 'Lucida Sans';
+		background-color: #c8c5b4;
+		border: 0px;
+		border-radius: 5px;
+		margin-top: 4%;
+	}
+	form{
+		width: 80%;
+	}
+	input[type=submit]{
+		background-color: #f8c5b4;
+		margin-top: 30px;
+		margin-left: 50%;
+	}
+	
+</style>
+ 
+</head>
+<body>
+	
+<div id="divimagem"></div>
+ 
+<div id="divform">
+	<h2>Cadastro de Usuário</h2>
+	<h4>Preencha todos os dados</h4>
+	
+	<form action="ServiceUsuario" method="post">
+		
+		<label>
+			Nome de Usuário:
+			<input type="text" name="txtusuario" required>
+		</label>
+		
+		
+		
+		<label>
+			Senha:
+			<input type="password" name="txtsenha" required>
+		</label>
+		
+		
+		
+		<label>
+			E-mail:
+			<input type="email" name="txtemail" required>
+		</label>
+		
+		
+		
+		<label>
+			Telefone:
+			<input type="tel" name="txtusuario" required>
+		</label>
+		
+		
+		
+		<label>
+			Nome completo:
+			<input type="text" name="txtnome" required>
+		</label>
+		
+		
+		
+		<label>
+			CPF:
+			<input type="text" name="txtcpf" required>
+		</label>
+		
+		
+		<input type="submit" value="Cadastrar">
+	</form>
+	
+</div>
+ 
+</body>
+</html>
